@@ -1,0 +1,148 @@
+/* pages/user/index.wxss */
+.user-header {
+  width: 100%;
+  min-height: 480rpx;
+  margin-bottom: 172rpx;
+  position: relative;
+}
+
+.user-bg {
+  background: linear-gradient(90deg, #0167A5, #27E4EB);
+}
+
+.user-grain {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 200rpx;
+  width: 100%;
+  background-image: url(https://oss.misouyp.com/user-header-grain.png);
+  background-size: 100%;
+}
+
+.user-info {
+  width: 94%;
+  height: 296rpx;
+  position: absolute;
+  bottom: -148rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 18rpx;
+  background-color: #fff;
+}
+
+.user-info .user-avatar {
+  width: 136rpx;
+  height: 136rpx;
+  border-radius: 50%;
+  border: 6rpx solid #fff;
+  overflow: hidden;
+  position: absolute;
+  top: -68rpx;
+  left: 24rpx;
+  box-sizing: border-box;
+}
+
+.user-info .user-avatar image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.user-header .page-title {
+  color: #fff;
+}
+
+.info-top {
+  padding: 16rpx 0 16rpx 200rpx;
+  height: 148rpx;
+}
+
+.info-top .nick-name {
+  padding: 12rpx 0;
+}
+
+.info-top .is-auth {
+  display: inline;
+  color: #4f4f4f;
+  background-color: #F4F5F9;
+  border-radius: 66rpx;
+  padding: 8rpx 20rpx;
+}
+
+.icon-fail {
+  color: #ffba42;
+  font-size: 26rpx;
+  margin-right: 10rpx;
+}
+
+.icon-success1 {
+  color: #07c160;
+}
+
+.icon-setting {
+  position: absolute;
+  top: 24rpx;
+  right: 36rpx;
+  width: 48rpx;
+  height: 48rpx;
+  font-size: 40rpx;
+  color: #444444;
+}
+
+.icon-setting::before {
+  width: 48rpx;
+  height: 48rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-bottom {
+  height: 148rpx;
+  padding: 0 24rpx;
+  align-items: center;
+}
+
+.info-bottom .count-likes, .info-bottom .count-like-me, .info-bottom .count-visitors {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.big-total {
+  font-weight: 600;
+}
+
+.info-tips {
+  color: #616161;
+}
+
+.user-menus {
+  width: 94%;
+  border-radius: 18rpx;
+  padding: 24rpx;
+  margin: 0 auto;
+}
+
+.user-menus .iconfont {
+  color: #016AA6;
+  margin-right: 24rpx;
+  font-weight: 600;
+}
+
+.user-menus .menu-item {
+  padding: 20rpx 12rpx;
+  position: relative;
+}
+
+.user-menus .icon-right {
+  position: absolute;
+  top: 50%;
+  right: -12rpx;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 28rpx;
+
+}

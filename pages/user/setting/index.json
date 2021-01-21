@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的资料",
+  "usingComponents": {
+    "editForm": "../../../components/user/editForm"
+  }
+}

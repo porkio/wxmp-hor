@@ -1,0 +1,17 @@
+.container, input {
+  font-family: PingFang-Medium,
+                 PingFangSC-Regular,
+                 Heiti,
+                 Heiti SC,
+                 DroidSans,
+                 DroidSansFallback,
+                 "Microsoft YaHei",
+                 sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  background: #F4F5F9;
+  
+}
+

@@ -1,0 +1,218 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="cards-wrapper">
+    <view class="card shadow-primary">
+      <view class="card-img">
+        <image src="https://oss.misouyp.com/photos/u-girl1.jpg?imageView2/1/w/345/h/400/format/jpg/q/75"></image>
+        <view class="is-auth">
+          <image src="../../images/authed.png"></image>
+          <text>身份已认证</text>
+        </view>
+      </view>
+      <view class="card-info">
+        <view class="btn btn-bottom-right">联系TA</view>
+        <view class="line-group j-c-sb">
+          <view class="info-nick-name">
+            <text class="fs-44">一只大懒猫</text>
+          </view>
+          <view class="info-position">
+            <text class="iconfont icon-position"></text>
+            <text class="fs-32">成都</text>
+          </view>
+        </view>
+        <view class="line-group">
+          <view class="info-text">
+            <text class="fs-32">年龄: </text>
+            <text class="fs-32">28</text>
+          </view>
+          <view class="info-text">
+            <text class="fs-32">身高: </text>
+            <text class="fs-32">170</text>
+          </view>
+          <view class="info-text">
+            <text class="fs-32">体重: </text>
+            <text class="fs-32">49kg</text>
+          </view>
+        </view>
+        <view class="line-group">
+          <view class="info-text">
+            <text class="fs-32">职业: </text>
+            <text class="fs-32">医生</text>
+          </view>
+          <view class="info-text">
+            <text class="fs-32">学历: </text>
+            <text class="fs-32">大专</text>
+          </view>
+        </view>
+        <view class="line-group">
+          <view class="info-text">
+            <text class="iconfont icon-wechat"></text>
+            <text class="fs-32">微信号: </text>
+            <text class="fs-32">相互喜欢后可见</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="card shadow-primary">
+      <view class="card-img">
+        <image src="https://oss.misouyp.com/photos/u-girl2.jpg?imageView2/1/w/345/h/400/format/jpg/q/75"></image>
+        <view class="is-auth">
+          <image src="../../images/authed.png"></image>
+          <text>身份已认证</text>
+        </view>
+      </view>
+      <view class="card-info">
+        <view class="btn btn-bottom-right">联系TA</view>
+        <view class="line-group j-c-sb">
+          <view class="info-nick-name">
+            <text class="fs-44">两只大懒猫</text>
+          </view>
+          <view class="info-position">
+            <text class="iconfont icon-position"></text>
+            <text class="fs-32">成都</text>
+          </view>
+        </view>
+        <view class="line-group">
+          <view class="info-text">
+            <text class="fs-32">年龄: </text>
+            <text class="fs-32">28</text>
+          </view>
+          <view class="info-text">
+            <text class="fs-32">身高: </text>
+            <text class="fs-32">170</text>
+          </view>
+          <view class="info-text">
+            <text class="fs-32">体重: </text>
+            <text class="fs-32">49kg</text>
+          </view>
+        </view>
+        <view class="line-group">
+          <view class="info-text">
+            <text class="fs-32">职业: </text>
+            <text class="fs-32">医生</text>
+          </view>
+          <view class="info-text">
+            <text class="fs-32">学历: </text>
+            <text class="fs-32">大专</text>
+          </view>
+        </view>
+        <view class="line-group">
+          <view class="info-text">
+            <text class="iconfont icon-wechat"></text>
+            <text class="fs-32">微信号: </text>
+            <text class="fs-32">相互喜欢后可见</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="card shadow-primary">
+      <view class="card-img">
+        <image src="https://oss.misouyp.com/photos/u-girl3.jpg?imageView2/1/w/345/h/400/format/jpg/q/75"></image>
+        <view class="is-auth">
+          <image src="../../images/authed.png"></image>
+          <text>身份已认证</text>
+        </view>
+      </view>
+      <view class="card-info">
+        <view class="btn btn-bottom-right">联系TA</view>
+        <view class="line-group j-c-sb">
+          <view class="info-nick-name">
+            <text class="fs-44">三只大懒猫</text>
+          </view>
+          <view class="info-position">
+            <text class="iconfont icon-position"></text>
+            <text class="fs-32">成都</text>
+          </view>
+        </view>
+        <view class="line-group">
+          <view class="info-text">
+            <text class="fs-32">年龄: </text>
+            <text class="fs-32">28</text>
+          </view>
+          <view class="info-text">
+            <text class="fs-32">身高: </text>
+            <text class="fs-32">170</text>
+          </view>
+          <view class="info-text">
+            <text class="fs-32">体重: </text>
+            <text class="fs-32">49kg</text>
+          </view>
+        </view>
+        <view class="line-group">
+          <view class="info-text">
+            <text class="fs-32">职业: </text>
+            <text class="fs-32">医生</text>
+          </view>
+          <view class="info-text">
+            <text class="fs-32">学历: </text>
+            <text class="fs-32">大专</text>
+          </view>
+        </view>
+        <view class="line-group">
+          <view class="info-text">
+            <text class="iconfont icon-wechat"></text>
+            <text class="fs-32">微信号: </text>
+            <text class="fs-32">相互喜欢后可见</text>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <view class="card shadow-primary">
+      <view class="card-img">
+        <image src="https://oss.misouyp.com/photos/u-girl4.jpg?imageView2/1/w/345/h/400/format/jpg/q/75"></image>
+        <view class="is-auth">
+          <image src="../../images/authed.png"></image>
+          <text>身份已认证</text>
+        </view>
+      </view>
+      <view class="card-info">
+        <view class="btn btn-bottom-right">联系TA</view>
+        <view class="line-group j-c-sb">
+          <view class="info-nick-name">
+            <text class="fs-44">四只大懒猫</text>
+          </view>
+          <view class="info-position">
+            <text class="iconfont icon-position"></text>
+            <text class="fs-32">成都</text>
+          </view>
+        </view>
+        <view class="line-group">
+          <view class="info-text">
+            <text class="fs-32">年龄: </text>
+            <text class="fs-32">28</text>
+          </view>
+          <view class="info-text">
+            <text class="fs-32">身高: </text>
+            <text class="fs-32">170</text>
+          </view>
+          <view class="info-text">
+            <text class="fs-32">体重: </text>
+            <text class="fs-32">49kg</text>
+          </view>
+        </view>
+        <view class="line-group">
+          <view class="info-text">
+            <text class="fs-32">职业: </text>
+            <text class="fs-32">医生</text>
+          </view>
+          <view class="info-text">
+            <text class="fs-32">学历: </text>
+            <text class="fs-32">大专</text>
+          </view>
+        </view>
+        <view class="line-group">
+          <view class="info-text">
+            <text class="iconfont icon-wechat"></text>
+            <text class="fs-32">微信号: </text>
+            <text class="fs-32">相互喜欢后可见</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+

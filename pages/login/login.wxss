@@ -1,0 +1,62 @@
+/* pages/login/login.wxss */
+.layer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.avatar {
+  width: 164rpx;
+  height: 164rpx;
+  margin: 80rpx auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.auth-title {
+  text-align: center;
+  padding: 0 44rpx;
+  color: #585858;
+  font-size: 34rpx;
+  margin-bottom: 40rpx;
+}
+
+.auth-subtitle {
+  text-align: center;
+  padding: 0 44rpx;
+  color: #888;
+  margin-bottom: 88rpx;
+  font-size: 28rpx;
+}
+
+button.btn-normal {
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #11C6D2;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 999rpx;
+  text-align: center;
+  font-weight: 400;
+}
+
+.login-btn {
+  margin-bottom: 24rpx;
+}
+
+.no-login-btn button.btn-normal {
+  background-color: #dfdfdf;
+}
+
+.btn-normal {
+  display: block;
+  margin: 0;
+  padding: 0;
+}

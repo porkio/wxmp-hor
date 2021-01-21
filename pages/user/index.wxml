@@ -1,0 +1,66 @@
+<!--pages/user/index.wxml-->
+<view class="container">
+  <view class="user-header user-bg">
+    <view class="page-title" style="position: fixed; top: {{capsule.top * 2 + 16}}rpx; left: 28rpx;">
+      <text class="fs-34">我的</text>
+    </view>
+    <view class="user-grain"></view>
+    <view class="user-info shadow-primary">
+      <view class="user-avatar">
+        <!-- 微信头像 -->
+        <image wx:if="{{ !userInfo.avatarUrl }}" src="https://oss.misouyp.com/user-avatar-default.jpg" bindtap="doLogin"></image>
+        <image wx:else src="{{ userInfo.avatarUrl }}"></image>
+      </view>
+      <view class="info-top">
+        <view class="nick-name" bindtap="doLogin" data-id="{{ userInfo.id }}">
+          <text class="fs-36">{{ userInfo.nickName }}</text>
+        </view>
+        <view wx:if="{{ !userInfo.isAuth }}" class="is-auth fs-24">
+          <text class="iconfont icon-fail"></text>
+          <text>身份未认证</text>
+        </view>
+        <view wx:else class="is-auth fs-24">
+          <text class="iconfont icon-success1"></text>
+          <text>身份已认证</text>
+        </view>
+        <view class="iconfont icon-setting" bindtap="navigation" data-url="pages/user/setting/index"></view>
+      </view>
+      <view class="info-bottom dis-flex">
+        <view class="count-likes">
+          <text class="big-total fs-38">0</text>
+          <text class="info-tips fs-28">我喜欢的</text>
+        </view>
+        <view class="count-like-me">
+          <text class="big-total fs-38">0</text>
+          <text class="info-tips fs-28">喜欢我的</text>
+        </view>
+        <view class="count-visitors">
+          <text class="big-total fs-38">0</text>
+          <text class="info-tips fs-28">最近来访</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="user-menus shadow-primary dis-flex flex-d-column bg-white">
+    <view class="menu-item" bindtap="navigation" data-url="pages/user/setting/index">
+      <text class="iconfont icon-userinfo1 fs-34"></text>
+      <text class="item-text fs-34">个人资料</text>
+      <text class="iconfont icon-right"></text>
+    </view>
+    <view class="menu-item" bindtap="navigation" data-url="pages/index/index">
+      <text class="iconfont icon-share fs-34"></text>
+      <text class="item-text fs-34">推荐给好友</text>
+      <text class="iconfont icon-right"></text>
+    </view>
+    <view class="menu-item" bindtap="navigation" data-url="pages/index/index">
+      <text class="iconfont icon-kefu fs-34"></text>
+      <text class="item-text fs-34">在线客服</text>
+      <text class="iconfont icon-right"></text>
+    </view>
+    <view class="menu-item" bindtap="navigation" data-url="pages/index/index">
+      <text class="iconfont icon-question1 fs-34"></text>
+      <text class="item-text fs-34">帮助与反馈</text>
+      <text class="iconfont icon-right"></text>
+    </view>
+  </view>
+</view>

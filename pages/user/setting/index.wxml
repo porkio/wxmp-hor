@@ -1,0 +1,40 @@
+<!--pages/user/setting/index.wxml-->
+<view class="container">
+  <view class="content">
+    <view class="title-2">基础信息</view>
+  <view class="user-menus shadow-primary dis-flex flex-d-column bg-white">
+    <view class="menu-item dis-flex j-c-sb" bindtap="navigation" data-url="pages/user/setting/index" bindtap="showForm">
+      <text class="item-text fs-34">昵称</text>
+      <text class="user-text fs-34">{{ userInfo.nickName }}</text>
+      <text class="iconfont icon-right"></text>
+    </view>
+    <view class="menu-item dis-flex j-c-sb" bindtap="navigation" data-url="pages/index/index">
+      <text class="item-text fs-34">性别</text>
+      <text class="user-text fs-34">{{ userInfo.gender == 1 ? '男' : '女' }}</text>
+      <text class="iconfont icon-right"></text>
+    </view>
+    <view class="menu-item dis-flex j-c-sb" bindtap="navigation" data-url="pages/index/index">
+      <text class="item-text fs-34">身高</text>
+      <text class="user-text fs-34">{{ userInfo.height ? userInfo.height + ' cm' : '-- cm' }}</text>
+      <text class="iconfont icon-right"></text>
+    </view>
+    <view class="menu-item dis-flex j-c-sb" bindtap="navigation" data-url="pages/index/index">
+      <text class="item-text fs-34">体重</text>
+      <text class="user-text fs-34">{{ userInfo.height ? userInfo.weight + ' cm' : '-- kg' }}</text>
+      <text class="iconfont icon-right"></text>
+    </view>
+    <view class="menu-item dis-flex j-c-sb" bindtap="navigation" data-url="pages/index/index">
+      <text class="item-text fs-34">生日</text>
+      <text class="user-text fs-34">{{ userInfo.birthday ? userInfo.birthday : '2021-01-01' }}</text>
+      <text class="iconfont icon-right"></text>
+    </view>
+    <view class="menu-item dis-flex j-c-sb" bindtap="navigation" data-url="pages/index/index">
+      <text class="item-text fs-34">居住城市</text>
+      <text class="user-text fs-34">{{ userInfo.city ? userInfo.city : '--' }}</text>
+      <text class="iconfont icon-right"></text>
+    </view>
+  </view>
+  </view>
+</view>
+
+<editForm id="editForm"></editForm>

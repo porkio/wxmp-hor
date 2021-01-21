@@ -1,0 +1,32 @@
+/* pages/user/setting/index.wxss */
+.user-menus {
+  width: 94%;
+  border-radius: 18rpx;
+  padding: 24rpx;
+  margin: 0 auto;
+}
+
+.user-menus .iconfont {
+  color: #016AA6;
+  margin-right: 24rpx;
+  font-weight: 600;
+}
+
+.user-menus .menu-item {
+  padding: 20rpx 12rpx;
+  position: relative;
+}
+
+.user-menus .menu-item .user-text {
+  padding-right: 44rpx;
+  color: #5d5d5d;
+}
+
+.user-menus .icon-right {
+  position: absolute;
+  top: 50%;
+  right: -12rpx;
+  transform: translateY(-50%);
+  color: #666;
+  font-size: 28rpx;
+}
