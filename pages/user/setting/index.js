@@ -6,7 +6,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    userInfo: {}
+    userInfo: {},
+    formData: {}
   },
 
   /**
@@ -77,14 +78,31 @@ Page({
       url: 'users/detail',
       data: {},
       success(res) {
-        _this.setData(res.data)
+        _this.setData({
+          userInfo: res.data.userInfo
+        })
       },
       check_login: false
     })
   },
 
-  showForm() {
+  showForm(e) {
     const _this = this
+    const { value, label, name, type } = e.currentTarget.dataset
+    _this.setData({
+        formData: { value, label, name, type }
+    })
     _this.editForm.show()
+  },
+
+  getFormData(e) {
+    const _this = this
+    const userInfo = _this.data.userInfo
+
+    const { prop, value } = e.detail
+
+    userInfo[prop] = value
+    
+    _this.setData({ userInfo })
   }
 })

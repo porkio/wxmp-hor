@@ -3,38 +3,38 @@
   <view class="content">
     <view class="title-2">基础信息</view>
   <view class="user-menus shadow-primary dis-flex flex-d-column bg-white">
-    <view class="menu-item dis-flex j-c-sb" bindtap="navigation" data-url="pages/user/setting/index" bindtap="showForm">
+    <view class="menu-item dis-flex j-c-sb" data-value="{{ userInfo.nickName }}" data-label="修改您的昵称" data-name="nickName" data-type="text" bindtap="showForm">
       <text class="item-text fs-34">昵称</text>
       <text class="user-text fs-34">{{ userInfo.nickName }}</text>
       <text class="iconfont icon-right"></text>
     </view>
-    <view class="menu-item dis-flex j-c-sb" bindtap="navigation" data-url="pages/index/index">
+    <view class="menu-item dis-flex j-c-sb" data-value="{{ userInfo.gender }}" data-label="性别">
       <text class="item-text fs-34">性别</text>
       <text class="user-text fs-34">{{ userInfo.gender == 1 ? '男' : '女' }}</text>
       <text class="iconfont icon-right"></text>
     </view>
-    <view class="menu-item dis-flex j-c-sb" bindtap="navigation" data-url="pages/index/index">
+    <view class="menu-item dis-flex j-c-sb" data-value="{{ userInfo.height ? userInfo.height : 0 }}" data-label="编辑您的身高 (cm)" data-name="height" data-type="number" bindtap="showForm">
       <text class="item-text fs-34">身高</text>
       <text class="user-text fs-34">{{ userInfo.height ? userInfo.height + ' cm' : '-- cm' }}</text>
       <text class="iconfont icon-right"></text>
     </view>
-    <view class="menu-item dis-flex j-c-sb" bindtap="navigation" data-url="pages/index/index">
+    <view class="menu-item dis-flex j-c-sb" data-value="{{ userInfo.weight ? userInfo.weight : 0 }}" data-label="编辑您的体重 (kg)" data-name="weight" data-type="number" bindtap="showForm">
       <text class="item-text fs-34">体重</text>
-      <text class="user-text fs-34">{{ userInfo.height ? userInfo.weight + ' cm' : '-- kg' }}</text>
+      <text class="user-text fs-34">{{ userInfo.weight ? userInfo.weight + ' kg' : '-- kg' }}</text>
       <text class="iconfont icon-right"></text>
     </view>
-    <view class="menu-item dis-flex j-c-sb" bindtap="navigation" data-url="pages/index/index">
+    <view class="menu-item dis-flex j-c-sb" data-value="{{ userInfo.birthday ? userInfo.birthday : '1990-01-01' }}" data-label="编辑您的生日" data-name="birthday" data-type="date" bindtap="showForm">
       <text class="item-text fs-34">生日</text>
-      <text class="user-text fs-34">{{ userInfo.birthday ? userInfo.birthday : '2021-01-01' }}</text>
+      <text class="user-text fs-34">{{ userInfo.birthday ? userInfo.birthday : '--' }}</text>
       <text class="iconfont icon-right"></text>
     </view>
-    <view class="menu-item dis-flex j-c-sb" bindtap="navigation" data-url="pages/index/index">
+    <view class="menu-item dis-flex j-c-sb" data-value="{{ userInfo.address ? userInfo.address : '--' }}" data-label="选择您的居住城市" data-name="address" data-type="region" bindtap="showForm">
       <text class="item-text fs-34">居住城市</text>
-      <text class="user-text fs-34">{{ userInfo.city ? userInfo.city : '--' }}</text>
+      <text class="user-text fs-34">{{ userInfo.address ? userInfo.address : '--' }}</text>
       <text class="iconfont icon-right"></text>
     </view>
   </view>
   </view>
 </view>
 
-<editForm id="editForm"></editForm>
+<editForm id="editForm" value="{{ formData.value }}" label="{{ formData.label }}" name="{{ formData.name }}" type="{{ formData.type }}" binddataChange="getFormData"></editForm>

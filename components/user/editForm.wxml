@@ -1,15 +1,36 @@
 <!--components/user/editForm.wxml-->
 <view class="layer" style="top: {{ layer.top }}; display: {{ display }};">
   <view class="weui-cells weui-cells_after-title">
-    <view class="weui-cell weui-cell_input">
+    <view wx:if="{{ type !== 'date' && type !== 'region' }}" class="weui-cell weui-cell_input">
       <view class="label">{{ label }}</view>
-      <input class="weui-input" name="input" value="{{ value }}" focus="{{ focus }}" placeholder="{{ placeholder }}"/>
+      <input class="weui-input" type="{{ type }}" name="input" value="{{ value }}" focus="{{ focus }}" placeholder="{{ placeholder }}" bindinput="bindInputChange"/>
     </view>
+
+    <!-- 日期选择器 -->
+    <view wx:elif="{{ type == 'date' }}" class="weui-cell weui-cell_input">
+      <view class="label">{{ label }}</view>
+      <picker mode="{{ type }}" value="{{ value }}" start="1970-01-01" end="2004-01-01" bindchange="bindDateChange">
+        <view class="picker">
+          {{ value }}
+        </view>
+      </picker>
+    </view>
+
+    <!-- 城市选择器 -->
+    <view wx:else class="weui-cell weui-cell_input">
+      <view class="label">{{ label }}</view>
+      <picker mode="{{ type }}" value="{{ value }}" start="1970-01-01" end="" bindchange="bindRegionChange">
+        <view class="picker">
+          {{ value }}
+        </view>
+      </picker>
+    </view>
+
   </view>
-  <view class="btn-group">
-    <button class="btn-primary">保存</button>
+
+  <view class="btn-group" data-url="{{ url }}">
+    <button class="btn-primary" bindtap="submitData">保存</button>
     <button class="btn-cancel" bindtap="hidden">取消</button>
   </view>
-  
-</view>
 
+</view>
